@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system xmlns="http://fep.vwgroup.com/system/2.0/sdk">
+    <schema_version>2.0.0</schema_version>
+    <name>FEP_SYSTEM</name> <!-- this has no functionality within FEP 2 but will in FEP 3 -->
+    <id>FEP_SYSTEM_CONTROLLER_LIB_TEST</id> <!-- this is only for documentation (no functionality within FEP 2) -->
+    <description>This is an example of a FEP system.</description>
+    <version>1.0.0</version> <!-- this is only for documentation (no functionality within FEP 2) -->
+    <author>Pierre</author>
+    <participants> <!-- this was been changed to participant because systems are a collection of participants with loaded elements!-->
+        <participant>
+            <!-- This id has to be unique in the whole system (in FEP 2)-->
+            <!-- This is the element id in FEP 2 by default (could be different, but is not used like that at the moment!)-->
+            <address>test_part_0</address>
+            <init_priority>0</init_priority>
+            <start_priority>0</start_priority>
+            <!-- This id has to be unique in the whole system -->
+            <element_instance>
+                <id>test_part_0</id>
+                <type>type_id</type>
+            </element_instance>
+        </participant>
+        <participant>
+            <!-- This id has to be unique in the whole system (in FEP 2)-->
+            <!-- This is the element id in FEP 2 by default (could be different, but is not used like that at the moment!)-->
+            <address>test_part_1</address>
+            <init_priority>1</init_priority>
+            <start_priority>1</start_priority>
+            <!-- This id has to be unique in the whole system -->
+            <element_instance>
+                <id>test_part_1</id>
+                <type>type_id</type>
+            </element_instance>
+        </participant>
+    </participants>
+</system>
